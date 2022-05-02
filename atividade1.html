@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EAD 2 atividade1</title>
+    <style>
+        body{
+            background-color: rgb(255, 255, 226);
+        }
+        form{
+            color: rgb(163, 56, 216);
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        h3{
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h3>MANUTENÇÃO DE USUÁRIOS DO SISTEMA INTERNO</h3>
+    <form>
+        <label for="clogin">Login</label> <!--C = campo-->
+        <input type="text" name="login" id="clogin">
+        <br>
+        <label for="csenha">Senha</label>
+        <input type="password" name="senha" id="csenha">
+        <br>
+        <label for="status">Status</label>
+        <input list="status" name="status">
+        <datalist id="status">
+            <option value="Ativo"> 
+            <option value="Inativo"> 
+        </datalist>
+        <br>
+        <p>Tipo: </p>
+        <input type="radio" id="tec" name="cargo" value="tecnico">
+        <label for="tec">Técnico</label><br>
+        <input type="radio" id="prof" name="cargo" value="professor">
+        <label for="prof">Professor</label><br>
+        <input type="radio" id="alun" name="cargo" value="aluno">
+        <label for="alun">Aluno</label>
+        <br>
+        <br>
+        <label for="data">Data Da Criação:</label>
+        <input type="date" id="data">
+        <p>Perfil: </p>
+        <input type="radio" id="conv" name="perfil" value="convidado">
+        <label for="conv">Técnico</label><br>
+        <input type="radio" id="admin" name="perfil" value="administrador">
+        <label for="admin">Professor</label><br>
+        <br>
+        <label for="obs">Observações:</label>
+        <textarea name ="observacoes" id="obs">
+         </textarea>
+         <br>
+         <p>Módulos</p>
+         <input name="modulo" type="checkbox" value="compras">Compras</input>
+         <input name="modulo" type="checkbox" value="biblio">Biblioteca</input>
+         <input name="modulo" type="checkbox" value="acad">Acadêmico</input>
+         <input name="modulo" type="checkbox" value="doc">Documentação</input>
+         <input name="modulo" type="checkbox" value="rh">Recursos Humanos</input>
+         <br>
+         <br>
+         <input type="submit" value="Cadastrar">
+         <input type="submit" value="Excluir">
+
+    </form>
+</body>
+</html>
